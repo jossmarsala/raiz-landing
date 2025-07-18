@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Editorial New";
+  src: url("assets/fonts/ppeditorialnew-regular-webfont.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manstein";
+  src: url("assets/fonts/manstein-webfont.woff") format("woff");
+  font-display: swap;
+}
+
+.font-editorialnew {
+    font-family: 'Editorial New', serif;
+}
+
+.font-manstein {
+    font-family: 'Manstein', serif;
+}
+
+.hero__grid-item {
+    opacity: 0.6;
+}

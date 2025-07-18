@@ -6,28 +6,33 @@
   <title>Somos RAÍZ</title>
 
   <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
   <!-- Using BEM convention to keep the code clean! -->
 
-  <section class="hero">
-    <div class="hero__grid">
-      <video class="hero__grid-item hero__grid-item--tv1" autoplay muted loop preload="metadata" src="assets/videos/tv1.mp4"></video>
-      <video class="hero__grid-item hero__grid-item--tv2" autoplay muted loop preload="metadata" src="assets/videos/tv2.mp4"></video>
-      <video class="hero__grid-item hero__grid-item--tv3" autoplay muted loop preload="metadata" src="assets/videos/tv3.mp4"></video>
-      <video class="hero__grid-item hero__grid-item--tv4" autoplay muted loop preload="metadata" src="assets/videos/tv4.mp4"></video>
-      <video class="hero__grid-item hero__grid-item--tv5" autoplay muted loop preload="metadata" src="assets/videos/tv5.mp4"></video>
-      <video class="hero__grid-item hero__grid-item--tv6" autoplay muted loop preload="metadata" src="assets/videos/tv6.mp4"></video>
-      <video class="hero__grid-item hero__grid-item--tv7" autoplay muted loop preload="metadata" src="assets/videos/tv7.mp4"></video>
-      <video class="hero__grid-item hero__grid-item--tv8" autoplay muted loop preload="metadata" src="assets/videos/tv8.mp4"></video>
-      <video class="hero__grid-item hero__grid-item--tv9" autoplay muted loop preload="metadata" src="assets/videos/tv9.mp4"></video>
-      <video class="hero__grid-item hero__grid-item--tv10" autoplay muted loop preload="metadata" src="assets/videos/tv10.mp4"></video>
-      <video class="hero__grid-item hero__grid-item--tv11" autoplay muted loop preload="metadata" src="assets/videos/tv11.mp4"></video>
-      <video class="hero__grid-item hero__grid-item--tv12" autoplay muted loop preload="metadata" src="assets/videos/tv12.mp4"></video>
+  <section class="hero relative bg-[#3D372B]">
+    <div class="hero__grid grid grid-cols-4">
+      <video class="hero__grid-item hero__grid-item--tv1" autoplay muted loop preload="metadata" playsinline src="assets/videos/tv1.mp4"></video>
+      <video class="hero__grid-item hero__grid-item--tv2" autoplay muted loop preload="metadata" playsinline src="assets/videos/tv2.mp4"></video>
+      <video class="hero__grid-item hero__grid-item--tv3" autoplay muted loop preload="metadata" playsinline src="assets/videos/tv3.mp4"></video>
+      <video class="hero__grid-item hero__grid-item--tv4" autoplay muted loop preload="metadata" playsinline src="assets/videos/tv4.mp4"></video>
+      <video class="hero__grid-item hero__grid-item--tv5" autoplay muted loop preload="metadata" playsinline src="assets/videos/tv5.mp4"></video>
+      <video class="hero__grid-item hero__grid-item--tv6" autoplay muted loop preload="metadata" playsinline src="assets/videos/tv6.mp4"></video>
+      <video class="hero__grid-item hero__grid-item--tv7" autoplay muted loop preload="metadata" playsinline src="assets/videos/tv7.mp4"></video>
+      <video class="hero__grid-item hero__grid-item--tv8" autoplay muted loop preload="metadata" playsinline src="assets/videos/tv8.mp4"></video>
+      <video class="hero__grid-item hero__grid-item--tv9" autoplay muted loop preload="metadata" playsinline src="assets/videos/tv9.mp4"></video>
+      <video class="hero__grid-item hero__grid-item--tv10" autoplay muted loop preload="metadata" playsinline src="assets/videos/tv10.mp4"></video>
+      <video class="hero__grid-item hero__grid-item--tv11" autoplay muted loop preload="metadata" playsinline src="assets/videos/tv11.mp4"></video>
+      <video class="hero__grid-item hero__grid-item--tv12" autoplay muted loop preload="metadata" playsinline src="assets/videos/tv12.mp4"></video>
     </div>
 
-    <h1 class="hero__text">Sembramos <span>tu</span> bienestar</h1>
+    <h1 class="absolute inset-0 flex flex-col items-center justify-center text-orange-50 font-editorialnew text-center text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[2.8rem] sm:leading-[3.2rem] md:leading-[4rem] lg:leading-[4.5rem]">
+      <span>Sembramos</span>
+      <span class="font-manstein mt-8 sm:mt-10 md:mt-12 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Tu</span>
+      <span>bienestar</span>
+    </h1>
   </section>
 
 </body>
