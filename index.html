@@ -27,6 +27,18 @@
       <video class="hero__grid-item hero__grid-item--tv11" autoplay muted loop preload="auto" playsinline src="assets/videos/tv11.mp4"></video>
       <video class="hero__grid-item hero__grid-item--tv12" autoplay muted loop preload="auto" playsinline src="assets/videos/tv12.mp4"></video>
     </div>
+    
+    <!-- Script to ensure autoplay in all devices-->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const videos = document.querySelectorAll('video');
+        videos.forEach(video => {
+          video.muted = true;
+          video.playsInline = true;
+          video.play().catch(e => console.warn('Autoplay falló:', e));
+        });
+      });
+    </script>
 
     <h1 class="absolute inset-0 flex flex-col items-center justify-center text-orange-50 font-editorialnew text-center text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[2.8rem] sm:leading-[3.2rem] md:leading-[4rem] lg:leading-[4.5rem]">
       <span>Sembramos</span>
